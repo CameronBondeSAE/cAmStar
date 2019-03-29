@@ -41,8 +41,8 @@ public class cAmStar : MonoBehaviour
 //		StartCoroutine(FindPath());
 
 //        InvokeRepeating("DemoMode", 5, 5);
-//        DemoMode();
-//        OnFoundPath += DemoMode;
+        DemoMode();
+        OnFoundPath += DemoMode;
     }
 
     public void DemoMode()
