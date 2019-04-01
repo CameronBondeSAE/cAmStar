@@ -6,244 +6,256 @@ using UnityEngine;
 
 public class cAmStar : MonoBehaviour
 {
-    public Map map;
+	public Map map;
 
-    public List<Node> open;
-    public List<Node> closed;
-    public List<Node> finalPath;
+	public List<Node> open;
+	public List<Node> closed;
+	public List<Node> finalPath;
 
-    public Node current;
-
-
-    public GameObject startPrefab;
-    public GameObject targetPrefab;
-    public GameObject pathCubePrefab;
-    private Vector2Int start;
-    private Vector2Int target;
-    public float visualiseSpeed = 0.1f;
-
-    GameObject targetIndicator;
-    GameObject startIndicator;
-
-    private event Action OnFoundPath;
-
-    void Start()
-    {
-        startIndicator = Instantiate(startPrefab);
-        targetIndicator = Instantiate(targetPrefab);
-
-        //	    open = new List<Node>();
-//	    closed = new List<Node>();
-//	    finalPath = new List<Node>();
-
-        RandomlyPositionStartAndTarget();
-
-//		StartCoroutine(FindPath());
-
-//        InvokeRepeating("DemoMode", 5, 5);
-        DemoMode();
-        OnFoundPath += DemoMode;
-    }
-
-    public void DemoMode()
-    {
-        ClearMap();
-        RandomlyPositionStartAndTarget();
-        FindPathCo();
-    }
-    
-    public void ClearMap()
-    {
-        finalPath.Clear();
-        open.Clear();
-        closed.Clear();
-
-        foreach (Node node1 in map.grid)
-        {
-            if (node1.debugGO != null)
-            {
-                node1.Reset();
-            }
-        }
-    }
-
-    public void FindPathCo()
-    {
-        StartCoroutine(FindPath());
-    }
-
-    public void Update()
-    {
-        // Don't continuously update if we want to visualise manually
-        if (visualiseSpeed > 0)
-            return;
-
-        start.x = (int) startIndicator.transform.position.x;
-        start.y = (int) startIndicator.transform.position.z;
-
-        target.x = (int) targetIndicator.transform.position.x;
-        target.y = (int) targetIndicator.transform.position.z;
-
-        ClearMap();
-//		RandomlyPositionStartAndTarget();
-        FindPathCo();
-    }
-
-    public IEnumerator FindPath()
-    {
-        int xCheck = 0;
-        int yCheck = 0;
-        int fCost;
-        int gCost;
-        int hCost;
-        Node nodeToCheck;
-
-        current = map.grid[start.x, start.y];
-        open.Add(current); // Initial starting point
-
-        // Loop until end found
-        while (open.Count > 0)
-        {
-            current = FindLowestFCost();
-            // HACK TODO DEBUG
-            current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
-
-            // Node is closed
-            open.Remove(current);
-
-            // TODO: Check shouldn't need the contains check
-            if (!closed.Contains(current))
-                closed.Add(current);
+	public Node current;
 
 
-            if (CheckReachedTarget())
-            {
-                yield return new WaitForSeconds(2f);
-                OnFoundPath?.Invoke();
-                yield break;
-            }
+	public GameObject startPrefab;
+	public GameObject targetPrefab;
+	public GameObject pathCubePrefab;
+	public Vector2    start;
+	public Vector2    target;
+	public float      visualiseSpeed = 0.1f;
+
+	GameObject targetIndicator;
+	GameObject startIndicator;
+
+	public event Action OnFoundPath;
+	public event Action OnBlockedPath;
+
+	void Start()
+	{
+		startIndicator  = Instantiate(startPrefab);
+		targetIndicator = Instantiate(targetPrefab);
+
+		RandomlyPositionStartAndTarget();
+
+//        DemoMode();
+//        OnFoundPath += DemoMode;
+	}
+
+	public void DemoMode()
+	{
+		RandomlyPositionStartAndTarget();
+		FindPath();
+	}
+
+	public void ClearMap()
+	{
+		finalPath.Clear();
+		open.Clear();
+		closed.Clear();
+
+		foreach (Node node in map.grid)
+		{
+			if (node.debugGO != null)
+			{
+				node.Reset();
+			}
+		}
+	}
+
+	public List<Node> FindPath()
+	{
+//        StartCoroutine(FindPathCoroutine());
+		return FindPathCoroutine();
+	}
+
+	public List<Node> FindPath(Vector2 _start, Vector2 _target)
+	{
+		start  = _start;
+		target = _target;
+
+		startIndicator.transform.position  = new Vector3(start.x, 0, start.y);
+		targetIndicator.transform.position = new Vector3(target.x, 0, target.y);
+
+		return FindPath();
+	}
+
+//	private IEnumerator FindPathCoroutine()
+	private List<Node> FindPathCoroutine()
+	{
+		// Debug
+		ClearMap();
+
+		float xCheck = 0;
+		float yCheck = 0;
+		int   fCost;
+		int   gCost;
+		int   hCost;
+		Node  nodeToCheck;
+
+		current = map.grid[(int) start.x, (int) start.y];
+		open.Add(current); // Initial starting point
+
+		// Loop until end found
+		while (open.Count > 0)
+		{
+			current = FindLowestFCost();
+			// HACK TODO DEBUG
+			current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
+
+			// Node is closed
+			open.Remove(current);
+
+			// TODO: Check shouldn't need the contains check
+			if (!closed.Contains(current))
+				closed.Add(current);
 
 
-            // Neighbours recalc
-            for (int x = -1; x < 2; x++)
-            {
-                for (int y = -1; y < 2; y++)
-                {
-                    // Same as current so bail
-                    if (x == 0 && y == 0)
-                        continue;
+			if (CheckReachedTarget())
+			{
+//                yield return new WaitForSeconds(2f);
+				OnFoundPath?.Invoke();
+				
+				//                yield break;
+				return finalPath;
+			}
 
-                    xCheck = current.position.x + x;
-                    yCheck = current.position.y + y;
 
-                    // Bail if out of bounds or the current node, or in the closed list
-                    if (xCheck < 0 || yCheck < 0 || xCheck >= map.size.x || yCheck >= map.size.y)
-                        continue;
+			// Neighbours recalc
+			for (int x = -1; x < 2; x++)
+			{
+				for (int y = -1; y < 2; y++)
+				{
+					// Same as current so bail
+					if (x == 0 && y == 0)
+						continue;
 
-                    nodeToCheck = map.grid[xCheck, yCheck];
-                    // Bail if node used or blocked
-                    if (closed.Contains(nodeToCheck) || nodeToCheck.isBlocked)
-                        continue;
+					xCheck = current.position.x + x;
+					yCheck = current.position.y + y;
 
-                    // Note: Multiply by ten to maintain ints for distances
-                    hCost = (int) (10 * Vector2Int.Distance(
-                                       nodeToCheck.position,
-                                       target));
-                    gCost = current.gCost + (int) (10f * Vector2Int.Distance(
-                                                       current.position,
-                                                       nodeToCheck.position));
+					// Bail if out of bounds or the current node, or in the closed list
+					if (xCheck < 0 || yCheck < 0 || xCheck >= map.size.x || yCheck >= map.size.y)
+						continue;
 
-                    // fCost
-                    fCost = hCost + gCost;
+					nodeToCheck = map.grid[(int) xCheck, (int) yCheck];
+					// Bail if node used or blocked
+					if (closed.Contains(nodeToCheck) || nodeToCheck.isBlocked)
+						continue;
 
-                    // Bail if the existing one is lower
-                    if (nodeToCheck.fCost != 0 && fCost > nodeToCheck.fCost)
-                        continue;
+					// Note: Multiply by ten to maintain ints for distances
+					hCost = (int) (10 * Vector2.Distance(
+														 nodeToCheck.position,
+														 target));
+					gCost = current.gCost + (int) (10f * Vector2.Distance(
+																		  current.position,
+																		  nodeToCheck.position));
 
-                    // All good, so record new values
-                    nodeToCheck.hCost = hCost;
-                    nodeToCheck.gCost = gCost;
-                    nodeToCheck.fCost = fCost;
+					// fCost
+					fCost = hCost + gCost;
 
-                    // Debug
-                    if (nodeToCheck.debugGO.GetComponentInChildren<TextMesh>() != null)
-                        nodeToCheck.debugGO.GetComponentInChildren<TextMesh>().text =
-                            nodeToCheck.gCost + ":" + nodeToCheck.hCost + "\n" + nodeToCheck.fCost;
+					// Bail if the existing fCost is lower
+					if (nodeToCheck.fCost != 0 && fCost > nodeToCheck.fCost)
+						continue;
 
-                    nodeToCheck.parent = current;
+					// All good, so record new values (don't do it WHILE you're calculating the f,g,h costs because they rely on previous results)
+					nodeToCheck.hCost = hCost;
+					nodeToCheck.gCost = gCost;
+					nodeToCheck.fCost = fCost;
 
-                    Debug.DrawLine(new Vector3(nodeToCheck.position.x, 0, nodeToCheck.position.y),
-                        new Vector3(nodeToCheck.position.x, 10f, nodeToCheck.position.y), Color.magenta,
-                        0.1f, false);
+					// Debug
+					if (nodeToCheck.debugGO.GetComponentInChildren<TextMesh>() != null)
+						nodeToCheck.debugGO.GetComponentInChildren<TextMesh>().text =
+							nodeToCheck.gCost + ":" + nodeToCheck.hCost + "\n" + nodeToCheck.fCost;
 
-                    // TODO: Shouldn't need the contains check
-                    if (!open.Contains(nodeToCheck))
-                        open.Add(nodeToCheck);
+					nodeToCheck.parent = current;
 
-                    if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed / 10f);
-                }
-            }
+					Debug.DrawLine(new Vector3(nodeToCheck.position.x, 0, nodeToCheck.position.y),
+								   new Vector3(nodeToCheck.position.x, 10f, nodeToCheck.position.y), Color.magenta,
+								   0.1f, false);
 
-            // HACK TODO DEBUG
-            current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.blue;
+					// TODO: Shouldn't need the contains check
+					if (!open.Contains(nodeToCheck))
+						open.Add(nodeToCheck);
 
-            if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
-        }
-        
-        yield return new WaitForSeconds(2f);
-        OnFoundPath?.Invoke();
-    }
+//                    if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed / 10f);
+				}
+			}
 
-    private bool CheckReachedTarget()
-    {
-// Reached end
-        if (current.position == target)
-        {
-//			Debug.Log("FOUND TARGET");
-            while (current.parent != null)
-            {
-                finalPath.Add(current);
-                current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
-//				current.debugGO = Instantiate(pathCubePrefab,
-//											  new Vector3(current.parent.position.x, 0, current.parent.position.y),
-//											  Quaternion.identity);
-                current = current.parent;
+			// HACK TODO DEBUG
+			current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.blue;
+
+//            if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
+		}
+
+//        yield return new WaitForSeconds(2f);
+		OnBlockedPath?.Invoke();
+		return null;
+	}
+
+	private bool CheckReachedTarget()
+	{
+		// Reached end
+		if (current.position == target)
+		{
+			while (current.parent != null)
+			{
+				finalPath.Add(current);
+				current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
+				current                                                           = current.parent;
 //				if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
-            }
+			}
 
-            return true;
-        }
+			// Because it get added from the END back to the start
+			finalPath.Reverse();
 
-        return false;
-    }
+			return true;
+		}
 
-    private Node FindLowestFCost()
-    {
+		return false;
+	}
+
+	private Node FindLowestFCost()
+	{
 //        int lowest = open.Min(Node => Node.fCost);
 
-        // Find next lowest fCost
-        int lowestFCost = int.MaxValue;
-        Node lowestFCostNode = null;
+		// Find next lowest fCost
+		int  lowestFCost     = int.MaxValue;
+		Node lowestFCostNode = null;
 
-        foreach (Node node in open)
-        {
-            if (node.fCost < lowestFCost)
-            {
-                lowestFCost = node.fCost;
-                lowestFCostNode = node;
-            }
-        }
+		foreach (Node node in open)
+		{
+			if (node.fCost < lowestFCost)
+			{
+				lowestFCost     = node.fCost;
+				lowestFCostNode = node;
+			}
+		}
 
-        return lowestFCostNode;
-    }
+		return lowestFCostNode;
+	}
 
-    public void RandomlyPositionStartAndTarget()
-    {
-        start = map.FindUnblockedSpace();
-        startIndicator.transform.position = new Vector3(start.x, 0, start.y);
-        target = map.FindUnblockedSpace();
-        targetIndicator.transform.position = new Vector3(target.x, 0, target.y);
-    }
+	public void RandomlyPositionStartAndTarget()
+	{
+		start                              = map.FindUnblockedSpace();
+		startIndicator.transform.position  = new Vector3(start.x, 0, start.y);
+		target                             = map.FindUnblockedSpace();
+		targetIndicator.transform.position = new Vector3(target.x, 0, target.y);
+	}
+
+
+//    public void Update()
+//    {
+//        // Don't continuously update if we want to visualise manually
+//        if (visualiseSpeed > 0)
+//            return;
+//
+//        start.x = (int) startIndicator.transform.position.x;
+//        start.y = (int) startIndicator.transform.position.z;
+//
+//        target.x = (int) targetIndicator.transform.position.x;
+//        target.y = (int) targetIndicator.transform.position.z;
+//
+//        ClearMap();
+////		RandomlyPositionStartAndTarget();
+//        FindPath();
+//    }
 
 
 //    private void OnDrawGizmos()

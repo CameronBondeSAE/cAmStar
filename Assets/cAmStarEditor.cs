@@ -18,7 +18,7 @@ public class cAmStarEditor : Editor
 		if(GUILayout.Button("Find path"))
 		{
 			myScript.ClearMap();
-			myScript.FindPathCo();
+			myScript.FindPath();
 		}
 	}
 }

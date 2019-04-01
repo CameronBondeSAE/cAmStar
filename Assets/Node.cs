@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEditor;
 using UnityEngine;
 
 [Serializable]
@@ -10,7 +11,7 @@ public class Node
 	public int  hCost = 0;
 	public int  fCost = 0;
 
-	public Vector2Int position;
+	public Vector2 position;
 
 	// HACK debug
 	public GameObject debugGO;
@@ -27,7 +28,12 @@ public class Node
 			{
 				debugGO.GetComponentInChildren<TextMesh>().text = "";				
 			}
-			debugGO.GetComponentInChildren<Renderer>().material.color = Color.white;
+			if(isBlocked)
+				debugGO.GetComponentInChildren<Renderer>().material.color = Color.red;
+			else
+			{
+//				debugGO.GetComponentInChildren<Renderer>().material.color = Color.white;
+			}
 		}
 	}
 }
