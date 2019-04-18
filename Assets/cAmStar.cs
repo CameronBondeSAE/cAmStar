@@ -12,7 +12,7 @@ public class cAmStar : MonoBehaviour
 	public List<Node> closed;
 	public List<Node> finalPath;
 
-	public Node current;
+	public Node parent;
 
 
 	public GameObject startPrefab;
@@ -88,24 +88,24 @@ public class cAmStar : MonoBehaviour
 		int   fCost;
 		int   gCost;
 		int   hCost;
-		Node  nodeToCheck;
+		Node  neighbour;
 
-		current = map.grid[(int) start.x, (int) start.y];
-		open.Add(current); // Initial starting point
+		parent = map.grid[(int) start.x, (int) start.y];
+		open.Add(parent); // Initial starting point
 
 		// Loop until end found
 		while (open.Count > 0)
 		{
-			current = FindLowestFCost();
+			parent = FindLowestFCost();
 			// HACK TODO DEBUG
-			current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
+//			parent.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
 
 			// Node is closed
-			open.Remove(current);
+			open.Remove(parent);
 
 			// TODO: Check shouldn't need the contains check
-			if (!closed.Contains(current))
-				closed.Add(current);
+			if (!closed.Contains(parent))
+				closed.Add(parent);
 
 
 			if (CheckReachedTarget())
@@ -127,59 +127,60 @@ public class cAmStar : MonoBehaviour
 					if (x == 0 && y == 0)
 						continue;
 
-					xCheck = current.position.x + x;
-					yCheck = current.position.y + y;
+					xCheck = parent.position.x + x;
+					yCheck = parent.position.y + y;
 
 					// Bail if out of bounds or the current node, or in the closed list
 					if (xCheck < 0 || yCheck < 0 || xCheck >= map.size.x || yCheck >= map.size.y)
 						continue;
 
-					nodeToCheck = map.grid[(int) xCheck, (int) yCheck];
+					neighbour = map.grid[(int) xCheck, (int) yCheck];
 					// Bail if node used or blocked
-					if (closed.Contains(nodeToCheck) || nodeToCheck.isBlocked)
+					if (closed.Contains(neighbour) || neighbour.isBlocked)
 						continue;
 
 					// Note: Multiply by ten to maintain ints for distances
 					hCost = (int) (10 * Vector2.Distance(
-														 nodeToCheck.position,
+														 neighbour.position,
 														 target));
-					gCost = current.gCost + (int) (10f * Vector2.Distance(
-																		  current.position,
-																		  nodeToCheck.position));
+					gCost = parent.gCost + (int) (10f * Vector2.Distance(
+																		  parent.position,
+																		  neighbour.position));
 
 					// fCost
 					fCost = hCost + gCost;
 
 					// Bail if the existing fCost is lower
-					if (nodeToCheck.fCost != 0 && fCost > nodeToCheck.fCost)
+					// HACK, don't check for 0, at least do -1 ffs
+					if (neighbour.fCost != 0 && fCost > neighbour.fCost)
 						continue;
 
 					// All good, so record new values (don't do it WHILE you're calculating the f,g,h costs because they rely on previous results)
-					nodeToCheck.hCost = hCost;
-					nodeToCheck.gCost = gCost;
-					nodeToCheck.fCost = fCost;
+					neighbour.hCost = hCost;
+					neighbour.gCost = gCost;
+					neighbour.fCost = fCost;
 
 					// Debug
-					if (nodeToCheck.debugGO.GetComponentInChildren<TextMesh>() != null)
-						nodeToCheck.debugGO.GetComponentInChildren<TextMesh>().text =
-							nodeToCheck.gCost + ":" + nodeToCheck.hCost + "\n" + nodeToCheck.fCost;
+//					if (neighbour.debugGO.GetComponentInChildren<TextMesh>() != null)
+//						neighbour.debugGO.GetComponentInChildren<TextMesh>().text =
+//							neighbour.gCost + ":" + neighbour.hCost + "\n" + neighbour.fCost;
 
-					nodeToCheck.parent = current;
+					neighbour.parent = parent;
 
-					Debug.DrawLine(new Vector3(nodeToCheck.position.x, 0, nodeToCheck.position.y),
-								   new Vector3(nodeToCheck.position.x, 10f, nodeToCheck.position.y), Color.magenta,
-								   0.1f, false);
+//					Debug.DrawLine(new Vector3(neighbour.position.x, 0, neighbour.position.y),
+//								   new Vector3(neighbour.position.x, 10f, neighbour.position.y), Color.magenta,
+//								   0.1f, false);
 
 					// TODO: Shouldn't need the contains check
-					if (!open.Contains(nodeToCheck))
-						open.Add(nodeToCheck);
+					if (!open.Contains(neighbour))
+						open.Add(neighbour);
 
 //                    if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed / 10f);
 				}
 			}
 
 			// HACK TODO DEBUG
-			current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.blue;
+//			parent.debugGO.GetComponentInChildren<Renderer>().material.color = Color.blue;
 
 //            if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
 		}
@@ -192,13 +193,13 @@ public class cAmStar : MonoBehaviour
 	private bool CheckReachedTarget()
 	{
 		// Reached end
-		if (current.position == target)
+		if (parent.position == target)
 		{
-			while (current.parent != null)
+			while (parent.parent != null)
 			{
-				finalPath.Add(current);
-				current.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
-				current                                                           = current.parent;
+				finalPath.Add(parent);
+				parent.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
+				parent                                                           = parent.parent;
 //				if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
 			}
 
@@ -258,55 +259,26 @@ public class cAmStar : MonoBehaviour
 //    }
 
 
-//    private void OnDrawGizmos()
-//    {
-//        foreach (Node node in open)
-//        {
-//            Gizmos.color = Color.red;
-//            Gizmos.DrawCube( new Vector3(node.position.x, -0.45f, node.position.x), Vector3.one);
-//        }
-//    }
-//        for (int x = 0; x < map.size.x; x++)
-//        {
-//            for (int y = 0; y < map.size.y; y++)
-//            {
-//                if (map.grid != null)
-//                {
-//                    if (map.grid[x, y].isBlocked)
-//                    {
-//                        Gizmos.color = Color.red;
-//                        Gizmos.DrawCube(new Vector3(x, -0.45f, y), Vector3.one);
-//                    }
-//
-//                    if (open.Contains(map.grid[x, y]))
-//                    {
-//                        Gizmos.color = Color.green;
-//                        Gizmos.DrawCube(new Vector3(x, -0.45f, y), Vector3.one);
-//                    }
-//
-//                    if (closed.Contains(map.grid[x, y]))
-//                    {
-//                        Gizmos.color = Color.gray;
-//                        Gizmos.DrawCube(new Vector3(x, -0.45f, y), Vector3.one);
-//                    }
-//                }
-//            }
-//        }
+    private void OnDrawGizmos()
+    {
+	    Vector3 size = new Vector3(1,0.1f,1);
+	    
+	    Gizmos.color = Color.yellow;
+	    foreach (Node node in open)
+	    {
+		    Gizmos.DrawCube( new Vector3(node.position.x, 0, node.position.y), size);
+	    }
 
+	    Gizmos.color = Color.black;
+	    foreach (Node node in closed)
+	    {
+		    Gizmos.DrawCube( new Vector3(node.position.x, 0, node.position.y), size);
+	    }
 
-//		// Scan the real world starting at 0,0,0 (to be able to place the grid add transform.position)
-//		for (int x = 0; x < size.x; x++)
-//		{
-//			for (int y = 0; y < size.y; y++)
-//			{
-//				if (Physics.CheckBox(transform.position + new Vector3(x, 0, y), new Vector3(0.5f, 0.5f, 0.5f), Quaternion.identity))
-//				{
-//					// Something is there
-//					grid[x, y].isBlocked = true;
-//					Gizmos.color = Color.red;
-//					Gizmos.DrawCube(transform.position + new Vector3(x, 0, y), Vector3.one);
-//				}
-//			}
-//		}
-//    }
+	    Gizmos.color = Color.green;
+	    foreach (Node node in finalPath)
+	    {
+		    Gizmos.DrawCube( new Vector3(node.position.x, 0, node.position.y), size);
+	    }
+    }
 }
