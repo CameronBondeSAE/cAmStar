@@ -36,13 +36,23 @@ public class MovingGuy : MonoBehaviour
 		AStar.OnBlockedPath += OnBlockedPath;
 		AStar.OnFoundPath   += OnFoundPath;
 
-		finalPath = AStar.FindPath(new Vector2(transform.position.x, transform.position.z), map.FindUnblockedSpace());
-		finalPathArray = new Node[finalPath.Count];
-		finalPath.CopyTo(finalPathArray);
+		
+		// Coroutine visualise
+		AStar.FindPath(new Vector2(transform.position.x, transform.position.z), map.FindUnblockedSpace());
+
+		// Instant
+		// finalPath = AStar.FindPath(new Vector2(transform.position.x, transform.position.z), map.FindUnblockedSpace());
+		// finalPathArray = new Node[finalPath.Count];
+		// finalPath.CopyTo(finalPathArray);
 	}
 
 	private void OnFoundPath()
 	{
+		// Visualise speed coroutine
+		finalPath = AStar.finalPath;
+		finalPathArray = new Node[finalPath.Count];
+		finalPath.CopyTo(finalPathArray);
+
 		state = States.GoTo;
 	}
 
@@ -68,7 +78,7 @@ public class MovingGuy : MonoBehaviour
 			// No path to target. Probably blocked
 			if (finalPathArray == null || finalPathArray.Length <= 0)
 			{
-				state = States.Idle;
+				// state = States.Idle;
 				return;
 			}
 			
@@ -86,6 +96,7 @@ public class MovingGuy : MonoBehaviour
 				// At target
 				if (currentNodeIndex > finalPathArray.Length-1)
 				{
+					finalPathArray = null;
 					state = States.Idle;
 					currentNodeIndex = 0;
 				}

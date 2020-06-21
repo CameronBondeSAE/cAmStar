@@ -6,6 +6,12 @@ using UnityEngine;
 
 public class cAmStar : MonoBehaviour
 {
+	public bool  showNeigbourSearch = false;
+	public bool  showNodeSearch     = true;
+	public float visualiseSpeed     = 0.1f;
+
+	public Camera trackingCamera;
+	
 	public Map map;
 
 	public List<Node> open;
@@ -20,10 +26,10 @@ public class cAmStar : MonoBehaviour
 	public GameObject pathCubePrefab;
 	public Vector2    start;
 	public Vector2    target;
-	public float      visualiseSpeed = 0.1f;
 
 	GameObject targetIndicator;
 	GameObject startIndicator;
+	public float cameraSpeed = 0.1f;
 
 	public event Action OnFoundPath;
 	public event Action OnBlockedPath;
@@ -62,8 +68,9 @@ public class cAmStar : MonoBehaviour
 
 	public List<Node> FindPath()
 	{
-//        StartCoroutine(FindPathCoroutine());
-		return FindPathCoroutine();
+		StartCoroutine(FindPathCoroutine());
+		// return FindPathCoroutine();
+		return null;
 	}
 
 	public List<Node> FindPath(Vector2 _start, Vector2 _target)
@@ -77,8 +84,8 @@ public class cAmStar : MonoBehaviour
 		return FindPath();
 	}
 
-//	private IEnumerator FindPathCoroutine()
-	private List<Node> FindPathCoroutine()
+	private IEnumerator FindPathCoroutine()
+		// private List<Node> FindPathCoroutine()
 	{
 		// Debug
 		ClearMap();
@@ -110,11 +117,11 @@ public class cAmStar : MonoBehaviour
 
 			if (CheckReachedTarget())
 			{
-//                yield return new WaitForSeconds(2f);
+				yield return new WaitForSeconds(1f);
 				OnFoundPath?.Invoke();
-				
-				//                yield break;
-				return finalPath;
+
+				yield break;
+				// return finalPath;
 			}
 
 
@@ -140,12 +147,8 @@ public class cAmStar : MonoBehaviour
 						continue;
 
 					// Note: Multiply by ten to maintain ints for distances
-					hCost = (int) (10 * Vector2.Distance(
-														 neighbour.position,
-														 target));
-					gCost = parent.gCost + (int) (10f * Vector2.Distance(
-																		  parent.position,
-																		  neighbour.position));
+					hCost = (int) (10 * Vector2.Distance(neighbour.position, target));
+					gCost = parent.gCost + (int) (10f * Vector2.Distance(parent.position, neighbour.position));
 
 					// fCost
 					fCost = hCost + gCost;
@@ -161,9 +164,9 @@ public class cAmStar : MonoBehaviour
 					neighbour.fCost = fCost;
 
 					// Debug
-//					if (neighbour.debugGO.GetComponentInChildren<TextMesh>() != null)
-//						neighbour.debugGO.GetComponentInChildren<TextMesh>().text =
-//							neighbour.gCost + ":" + neighbour.hCost + "\n" + neighbour.fCost;
+					var textDebug = neighbour.debugGO.GetComponentInChildren<TextMesh>();
+					if (textDebug != null)
+						textDebug.text = "g="+neighbour.gCost + "\nh=" + neighbour.hCost + "\nf="+neighbour.fCost;
 
 					neighbour.parent = parent;
 
@@ -175,19 +178,21 @@ public class cAmStar : MonoBehaviour
 					if (!open.Contains(neighbour))
 						open.Add(neighbour);
 
-//                    if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed / 10f);
+					// Debug
+					cameraDebugPosition = neighbour.position;
+					if (visualiseSpeed > 0 && showNeigbourSearch) yield return new WaitForSeconds(visualiseSpeed);
 				}
 			}
 
 			// HACK TODO DEBUG
 //			parent.debugGO.GetComponentInChildren<Renderer>().material.color = Color.blue;
 
-//            if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
+			if (visualiseSpeed > 0 && showNodeSearch) yield return new WaitForSeconds(visualiseSpeed);
 		}
 
-//        yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(2f);
 		OnBlockedPath?.Invoke();
-		return null;
+		// return null;
 	}
 
 	private bool CheckReachedTarget()
@@ -259,26 +264,32 @@ public class cAmStar : MonoBehaviour
 //    }
 
 
-    private void OnDrawGizmos()
-    {
-	    Vector3 size = new Vector3(1,0.1f,1);
-	    
-	    Gizmos.color = Color.yellow;
-	    foreach (Node node in open)
-	    {
-		    Gizmos.DrawCube( new Vector3(node.position.x, 0, node.position.y), size);
-	    }
+	public Vector3 cameraDebugPosition;
+private void Update()
+{
+	trackingCamera.transform.position = Vector3.Lerp(trackingCamera.transform.position, new Vector3(cameraDebugPosition.x, 10f, cameraDebugPosition.y), cameraSpeed);
+}
 
-	    Gizmos.color = Color.black;
-	    foreach (Node node in closed)
-	    {
-		    Gizmos.DrawCube( new Vector3(node.position.x, 0, node.position.y), size);
-	    }
+private void OnDrawGizmos()
+	{
+		Vector3 size = new Vector3(1, 0.1f, 1);
 
-	    Gizmos.color = Color.green;
-	    foreach (Node node in finalPath)
-	    {
-		    Gizmos.DrawCube( new Vector3(node.position.x, 0, node.position.y), size);
-	    }
-    }
+		Gizmos.color = new Color(1f, 0.9215686f, 0.01568628f, 0.5f);
+		foreach (Node node in open)
+		{
+			Gizmos.DrawCube(new Vector3(node.position.x, 0, node.position.y), size);
+		}
+
+		Gizmos.color = new Color(0, 0, 0, 0.5f);
+		foreach (Node node in closed)
+		{
+			Gizmos.DrawCube(new Vector3(node.position.x, 0, node.position.y), size);
+		}
+
+		Gizmos.color = Color.green;
+		foreach (Node node in finalPath)
+		{
+			Gizmos.DrawCube(new Vector3(node.position.x, 0, node.position.y), size);
+		}
+	}
 }
