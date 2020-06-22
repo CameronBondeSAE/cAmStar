@@ -38,30 +38,19 @@ public class Map : MonoBehaviour
 	private void SpawnGrid()
 	{
 		// Spawn grid
-		grid = new Node[size.x, size.y];
 
 		for (int x = 0; x < size.x; x++)
 		{
 			for (int y = 0; y < size.y; y++)
 			{
-				grid[x, y]          = new Node();
-				grid[x, y].position = new Vector2Int(x, y);
-//grid[x, y].isBlocked = Random.Range(0, 10) > 6; // HACK random map
-				grid[x, y].isBlocked = Mathf.PerlinNoise(x / 5f, y / 5f) > 0.5f; // HACK random map
-				GameObject o;
-				if (grid[x, y].isBlocked)
+				if (Random.value > 0.5f)
 				{
-					o = Instantiate(gridPrefabBlocked, new Vector3(x, 0, y), Quaternion.identity);
-					o.GetComponentInChildren<Renderer>().material.color = Color.red;
+					Debug.DrawLine(new Vector3(x,0,y), new Vector3(x,5,y), Color.red, 100f);
 				}
 				else
 				{
-					o = Instantiate(gridPrefab, new Vector3(x, 0, y), Quaternion.identity);
-					o.GetComponentInChildren<Renderer>().material.color = Color.green;
-					// HACK debug
+					Debug.DrawLine(new Vector3(x,0,y), new Vector3(x,2,y), Color.green, 100f);
 				}
-
-				grid[x, y].debugGO = o;
 			}
 		}
 	}
