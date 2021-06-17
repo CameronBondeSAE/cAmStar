@@ -5,7 +5,13 @@ using UnityEngine;
 [Serializable]
 public class Node
 {
-	public bool isBlocked = false;
+	public bool isBlocked    = false;
+
+	public float  occlusionScore = 0;
+	public bool isCoverPoint   = false;
+	
+	
+	
 	public Node parent;
 	public int  gCost = 0;
 	public int  hCost = 0;
