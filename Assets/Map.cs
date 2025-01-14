@@ -1,40 +1,58 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.PackageManager;
-using UnityEngine;
-using UnityEngine.PlayerLoop;
+﻿using UnityEngine;
 
 public class Map : MonoBehaviour
 {
-	public Node[,]    grid;
+	public Node[,] grid;
 	public GameObject gridPrefab;
 	public GameObject gridPrefabBlocked;
 	public Vector2Int size;
+	public Transform parentForDebugGOs;
 
 
-	public bool           occlusion             = true;
-	public bool           hidingSpots           = true;
-	public float          maxDistance           = 25f;
-	public float          distanceToBeFullyOpen = 10f;
-	public int            numberOfAngles        = 16;
+	public bool occlusion = true;
+	public bool hidingSpots = true;
+	public float maxDistance = 25f;
+	public float distanceToBeFullyOpen = 10f;
+	public int numberOfAngles = 16;
 	public AnimationCurve distanceToOcclusionScalar;
 
-	int        angleStep = 45;
+	int angleStep = 45;
 	RaycastHit hitInfo;
 
 
 	// Start is called before the first frame update
 	void Awake()
 	{
+		GenerateNewMap();
+	}
+
+	public void GenerateNewMap()
+	{
+		
+		// if (grid != null && grid.Length > 0)
+		// {
+		// 	for (int x = 0; x < size.x; x++)
+		// 	{
+		// 		for (int y = 0; y < size.y; y++)
+		// 		{
+		// 			grid[x, y].isBlocked = false;
+		// 		}
+		// 	}
+		// }
 		SpawnGrid();
+		Invoke("CalculateOcclusion_Coroutine", 2f);
+	}
+
+	private void CalculateOcclusion_Coroutine()
+	{
 		CalculateOcclusion();
 	}
 
 
 	public Vector2Int FindUnblockedSpace()
 	{
-		Vector2 randomPosition      = new Vector2(0, 0);
-		bool    foundUnblockedSpace = false;
+		Vector2 randomPosition = new Vector2(0, 0);
+		bool foundUnblockedSpace = false;
 		while (foundUnblockedSpace == false)
 		{
 			int x = Random.Range(0, size.x - 1);
@@ -50,8 +68,43 @@ public class Map : MonoBehaviour
 		return new Vector2Int(-1, -1);
 	}
 
-	private void SpawnGrid()
+	public void SpawnGrid()
 	{
+		// Destroy old maps debug GOs
+		if (grid != null)
+		{
+			// for (int x = 0; x < size.x; x++)
+			// {
+			// 	for (int y = 0; y < size.y; y++)
+			// 	{
+			// 		Node node = grid[x, y];
+			// 		if (node != null) Destroy(node.debugGO);
+			// 	}
+			// }
+
+			if (parentForDebugGOs.childCount > 0)
+			{
+				foreach (Transform child in parentForDebugGOs.GetComponentsInChildren<Transform>())
+				{
+					if(child != parentForDebugGOs)
+						Destroy(child.gameObject);
+				}
+			}
+		}
+
+
+
+		// for (int x = 0; x < size.x; x++)
+		// {
+		// 	for (int y = 0; y < size.y; y++)
+		// 	{
+		// 		grid[x, y].isBlocked = false;
+		// 		grid[x, y].isCoverPoint = false;
+		// 		grid[x, y].occlusionScore = 0f;
+		// 		// grid[x, y] = 0f;
+		// 	}
+		// }
+
 		// Spawn grid
 		grid = new Node[size.x, size.y];
 
@@ -63,25 +116,25 @@ public class Map : MonoBehaviour
 		// Border
 		for (int x = -1; x < size.x + 1; x++)
 		{
-			o                                                   = Instantiate(gridPrefabBlocked, new Vector3(x, 0, -1), Quaternion.identity);
+			o = Instantiate(gridPrefabBlocked, new Vector3(x, 0, -1), Quaternion.identity, parentForDebugGOs);
 			o.GetComponentInChildren<Renderer>().material.color = Color.blue;
 		}
 
 		for (int x = -1; x < size.x + 1; x++)
 		{
-			o                                                   = Instantiate(gridPrefabBlocked, new Vector3(x, 0, size.y), Quaternion.identity);
+			o = Instantiate(gridPrefabBlocked, new Vector3(x, 0, size.y), Quaternion.identity, parentForDebugGOs);
 			o.GetComponentInChildren<Renderer>().material.color = Color.blue;
 		}
 
 		for (int y = -1; y < size.y + 1; y++)
 		{
-			o                                                   = Instantiate(gridPrefabBlocked, new Vector3(-1, 0, y), Quaternion.identity);
+			o = Instantiate(gridPrefabBlocked, new Vector3(-1, 0, y), Quaternion.identity, parentForDebugGOs);
 			o.GetComponentInChildren<Renderer>().material.color = Color.blue;
 		}
 
 		for (int y = -1; y < size.y + 1; y++)
 		{
-			o                                                   = Instantiate(gridPrefabBlocked, new Vector3(size.x, 0, y), Quaternion.identity);
+			o = Instantiate(gridPrefabBlocked, new Vector3(size.x, 0, y), Quaternion.identity, parentForDebugGOs);
 			o.GetComponentInChildren<Renderer>().material.color = Color.blue;
 		}
 
@@ -90,18 +143,18 @@ public class Map : MonoBehaviour
 		{
 			for (int y = 0; y < size.y; y++)
 			{
-				grid[x, y]          = new Node();
+				grid[x, y] = new Node();
 				grid[x, y].position = new Vector2Int(x, y);
 //grid[x, y].isBlocked = Random.Range(0, 10) > 6; // HACK random map
 				grid[x, y].isBlocked = Mathf.PerlinNoise(rndStart + x / 10f, y / 10f) > 0.5f; // HACK random map
 				if (grid[x, y].isBlocked)
 				{
-					o                                                   = Instantiate(gridPrefabBlocked, new Vector3(x, 0, y), Quaternion.identity);
+					o = Instantiate(gridPrefabBlocked, new Vector3(x, 0, y), Quaternion.identity, parentForDebugGOs);
 					o.GetComponentInChildren<Renderer>().material.color = Color.red;
 				}
 				else
 				{
-					o                                                   = Instantiate(gridPrefab, new Vector3(x, 0, y), Quaternion.identity);
+					o = Instantiate(gridPrefab, new Vector3(x, 0, y), Quaternion.identity, parentForDebugGOs);
 					o.GetComponentInChildren<Renderer>().material.color = Color.green;
 					// HACK debug
 				}
@@ -114,6 +167,14 @@ public class Map : MonoBehaviour
 
 	public void CalculateOcclusion()
 	{
+		for (int x = 0; x < size.x; x++)
+		{
+			for (int y = 0; y < size.y; y++)
+			{
+				grid[x, y].occlusionScore = 0;
+			}
+		}
+// return;
 		angleStep = 360 / numberOfAngles;
 
 		for (int x = 0; x < size.x; x++)
@@ -144,7 +205,8 @@ public class Map : MonoBehaviour
 
 						if (occlusion)
 						{
-							grid[x, y].occlusionScore += distanceToOcclusionScalar.Evaluate((maxDistance - hitInfo.distance) / maxDistance);
+							grid[x, y].occlusionScore +=
+								distanceToOcclusionScalar.Evaluate((maxDistance - hitInfo.distance) / maxDistance);
 						}
 					}
 
@@ -180,6 +242,7 @@ public class Map : MonoBehaviour
 						// Scale the value to a 0 to 255 value for colours.
 						float occlusionScore = 1f - (grid[x, y].occlusionScore / maxOcclusionValue);
 						Gizmos.color = new Color(occlusionScore, occlusionScore, occlusionScore);
+						// Gizmos.color = new Color(1f,1f,1f);
 						Gizmos.DrawCube(new Vector3(x, 0, y), new Vector3(1, 0.1f, 1));
 					}
 				}

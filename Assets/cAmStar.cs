@@ -6,12 +6,12 @@ using UnityEngine;
 
 public class cAmStar : MonoBehaviour
 {
-	public bool  showNeigbourSearch = false;
-	public bool  showNodeSearch     = true;
-	public float visualiseSpeed     = 0.1f;
+	public bool showNeigbourSearch = false;
+	public bool showNodeSearch = true;
+	public float visualiseSpeed = 0.1f;
 
 	public Camera trackingCamera;
-	
+
 	public Map map;
 
 	public List<Node> open;
@@ -24,8 +24,8 @@ public class cAmStar : MonoBehaviour
 	public GameObject startPrefab;
 	public GameObject targetPrefab;
 	public GameObject pathCubePrefab;
-	public Vector2    start;
-	public Vector2    target;
+	public Vector2 start;
+	public Vector2 target;
 
 	GameObject targetIndicator;
 	GameObject startIndicator;
@@ -36,7 +36,7 @@ public class cAmStar : MonoBehaviour
 
 	void Start()
 	{
-		startIndicator  = Instantiate(startPrefab);
+		startIndicator = Instantiate(startPrefab);
 		targetIndicator = Instantiate(targetPrefab);
 
 		RandomlyPositionStartAndTarget();
@@ -51,7 +51,7 @@ public class cAmStar : MonoBehaviour
 		FindPath();
 	}
 
-	public void ClearMap()
+	public void ClearNodes()
 	{
 		finalPath.Clear();
 		open.Clear();
@@ -75,10 +75,10 @@ public class cAmStar : MonoBehaviour
 
 	public List<Node> FindPath(Vector2 _start, Vector2 _target)
 	{
-		start  = _start;
+		start = _start;
 		target = _target;
 
-		startIndicator.transform.position  = new Vector3(start.x, 0, start.y);
+		startIndicator.transform.position = new Vector3(start.x, 0, start.y);
 		targetIndicator.transform.position = new Vector3(target.x, 0, target.y);
 
 		return FindPath();
@@ -88,14 +88,14 @@ public class cAmStar : MonoBehaviour
 		// private List<Node> FindPathCoroutine()
 	{
 		// Debug
-		ClearMap();
+		ClearNodes();
 
 		float xCheck = 0;
 		float yCheck = 0;
-		int   fCost;
-		int   gCost;
-		int   hCost;
-		Node  neighbour;
+		int fCost;
+		int gCost;
+		int hCost;
+		Node neighbour;
 
 		parent = map.grid[(int) start.x, (int) start.y];
 		open.Add(parent); // Initial starting point
@@ -166,7 +166,7 @@ public class cAmStar : MonoBehaviour
 					// Debug
 					var textDebug = neighbour.debugGO.GetComponentInChildren<TextMesh>();
 					if (textDebug != null)
-						textDebug.text = "g="+neighbour.gCost + "\nh=" + neighbour.hCost + "\nf="+neighbour.fCost;
+						textDebug.text = "g=" + neighbour.gCost + "\nh=" + neighbour.hCost + "\nf=" + neighbour.fCost;
 
 					neighbour.parent = parent;
 
@@ -204,7 +204,7 @@ public class cAmStar : MonoBehaviour
 			{
 				finalPath.Add(parent);
 				parent.debugGO.GetComponentInChildren<Renderer>().material.color = Color.green;
-				parent                                                           = parent.parent;
+				parent = parent.parent;
 //				if (visualiseSpeed > 0) yield return new WaitForSeconds(visualiseSpeed);
 			}
 
@@ -222,14 +222,14 @@ public class cAmStar : MonoBehaviour
 //        int lowest = open.Min(Node => Node.fCost);
 
 		// Find next lowest fCost
-		int  lowestFCost     = int.MaxValue;
+		int lowestFCost = int.MaxValue;
 		Node lowestFCostNode = null;
 
 		foreach (Node node in open)
 		{
 			if (node.fCost < lowestFCost)
 			{
-				lowestFCost     = node.fCost;
+				lowestFCost = node.fCost;
 				lowestFCostNode = node;
 			}
 		}
@@ -239,9 +239,9 @@ public class cAmStar : MonoBehaviour
 
 	public void RandomlyPositionStartAndTarget()
 	{
-		start                              = map.FindUnblockedSpace();
-		startIndicator.transform.position  = new Vector3(start.x, 0, start.y);
-		target                             = map.FindUnblockedSpace();
+		start = map.FindUnblockedSpace();
+		startIndicator.transform.position = new Vector3(start.x, 0, start.y);
+		target = map.FindUnblockedSpace();
 		targetIndicator.transform.position = new Vector3(target.x, 0, target.y);
 	}
 
@@ -265,12 +265,25 @@ public class cAmStar : MonoBehaviour
 
 
 	public Vector3 cameraDebugPosition;
-private void Update()
-{
-	trackingCamera.transform.position = Vector3.Lerp(trackingCamera.transform.position, new Vector3(cameraDebugPosition.x, 10f, cameraDebugPosition.y), cameraSpeed);
-}
 
-private void OnDrawGizmos()
+	private void Update()
+	{
+		trackingCamera.transform.position = Vector3.Lerp(trackingCamera.transform.position,
+			new Vector3(cameraDebugPosition.x, 10f, cameraDebugPosition.y), cameraSpeed);
+
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			ClearNodes();
+			map.GenerateNewMap();
+		}
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
+		}
+	}
+
+	private void OnDrawGizmos()
 	{
 		Vector3 size = new Vector3(1, 0.1f, 1);
 
