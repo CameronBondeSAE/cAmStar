@@ -1,0 +1,1292 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-octam" at "2026-04-01T07:13:50.5679271Z"
+Built from '6000.0/staging' branch; Version is '6000.0.70f1 (0d9e1a373c8b) revision 892442'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 65295 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-04-01T07:13:50Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.70f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Dev/School/cAmStar
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49931
+-licensingIpc
+LicenseClient-octam
+-job-worker-count
+15
+-background-job-worker-count
+8
+-gc-helper-count
+1
+-name
+AssetImport
+Successfully changed project path to: C:/Dev/School/cAmStar
+C:/Dev/School/cAmStar
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [29876]  Target information:
+
+Player connection [29876]  * "[IP] 10.1.1.107 [Port] 0 [Flags] 2 [Guid] 1198826180 [EditorId] 1198826180 [Version] 1048832 [Id] WindowsEditor(7,Cam) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29876]  * "[IP] 172.22.208.1 [Port] 0 [Flags] 2 [Guid] 1198826180 [EditorId] 1198826180 [Version] 1048832 [Id] WindowsEditor(7,Cam) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29876] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [29876] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 15
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 9.27 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.38 ms.
+Initialize engine version: 6000.0.70f1 (0d9e1a373c8b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.70f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Dev/School/cAmStar/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4070 Ti SUPER (ID=0x2705)
+    Vendor:   NVIDIA
+    VRAM:     16061 MB
+    Driver:   32.0.15.9186
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.70f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.70f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.70f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.70f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.70f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003966 seconds.
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              f1e0407f5ad644d9ab5cfe52c44475ec
+  Correlation Id:          09f58717e7c805439e6a754ea2169ff9
+  External correlation Id: 2828169257874293351
+  Machine Id:              P29ZtR2xTETUBAO4cxGByzcDh8w=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-octam" (connect: 0.00s, validation: 0.00s, handshake: 0.76s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-octam-notifications" at "2026-04-01T07:13:51.3315803Z"
+[Licensing::Module] Licensing Background thread has ended after 0.76s
+- Loaded All Assemblies, in  0.265 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.219 seconds
+Domain Reload Profiling: 483ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (101ms)
+		LoadAssemblies (97ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (99ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (90ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (220ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (185ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (32ms)
+			ProcessInitializeOnLoadAttributes (82ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 10150-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Duplicate assembly 'System.Collections.Immutable.FSR.dll' with different versions detected, using 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.FSR.dll, AssemblyName=System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.dll, AssemblyName=System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.733 seconds
+Refreshing native plugins compatible for Editor in 2.95 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 2.91 ms, found 8 plugins.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-cAmStar2
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x00076] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00001] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x00030] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x0001e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:204 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x0003e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00050] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <9b202f9e66df4a80986e89af18f9605b>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.796 seconds
+Domain Reload Profiling: 4523ms
+	BeginReloadAssembly (806ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (698ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (856ms)
+		LoadAssemblies (557ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (358ms)
+			TypeCache.Refresh (263ms)
+				TypeCache.ScanAssembly (246ms)
+			BuildScriptInfoCaches (83ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2796ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2706ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (2288ms)
+			ProcessInitializeOnLoadMethodAttributes (206ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.33 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12658 unused Assets / (23.2 MB). Loaded Objects now: 13478.
+Memory consumption went from 233.6 MB to 210.4 MB.
+Total: 11.268900 ms (FindLiveObjects: 0.718900 ms CreateObjectMapping: 0.800300 ms MarkObjects: 4.973500 ms  DeleteObjects: 4.775500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1629722.897531 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 17h12m.unity
+  artifactKey: Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 17h12m.unity using Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a323a5addfbbd8a0dac83afce88630dc') in 0.1151078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 17h07m.unity
+  artifactKey: Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 17h07m.unity using Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3c89b72af56808103883cdbdae50496e') in 0.0063594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 17h27m.unity
+  artifactKey: Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 17h27m.unity using Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0e7cff10a376a4fbd228f536019ce25d') in 0.0072191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Two cubes one rectangle/Main.unity
+  artifactKey: Guid(8ae23f9288956a548beba09c56c7ecf1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/Main.unity using Guid(8ae23f9288956a548beba09c56c7ecf1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'be5ea23a1dae0c64eca2a16895e0012c') in 0.0145858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Two cubes one rectangle/LobbyManager.cs
+  artifactKey: Guid(04f847ed3fd5ac340a720d9ea29a86e9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/LobbyManager.cs using Guid(04f847ed3fd5ac340a720d9ea29a86e9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e0e1ecb25f493953bbd15dcc67482ec0') in 0.0181946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 17h22m.unity
+  artifactKey: Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 17h22m.unity using Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '170dcb00f2b0270f51f86d33ea4f89ea') in 0.0062912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.622396 seconds.
+  path: Assets/Two cubes one rectangle/New Actions.inputactions
+  artifactKey: Guid(c195c6d1449fc7c4a83e9e65ea73ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/New Actions.inputactions using Guid(c195c6d1449fc7c4a83e9e65ea73ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bdf64011153253bdb6fd0eef722f179d') in 0.0115707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.919808 seconds.
+  path: Assets/Two cubes one rectangle/New Actions.inputactions
+  artifactKey: Guid(c195c6d1449fc7c4a83e9e65ea73ec84) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/New Actions.inputactions using Guid(c195c6d1449fc7c4a83e9e65ea73ec84) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e3f99a9d537a9c383fd18bda43075f97') in 0.012145 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.158742 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h15m.unity
+  artifactKey: Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h15m.unity using Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e5a33b8731f090fa6fd5c95f5b503b31') in 0.0082539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 290.723173 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h20m.unity
+  artifactKey: Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h20m.unity using Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ef15be03cb004e3820120d4afa8013ef') in 0.0114723 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.835263 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h25m.unity
+  artifactKey: Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h25m.unity using Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '750c0c1a6c4d447c6cd89efec5ef7b89') in 0.0082406 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.383422 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h30m.unity
+  artifactKey: Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h30m.unity using Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '47d096cfaa099e7e80d17932bde7785e') in 0.0076968 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 298.049651 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h35m.unity
+  artifactKey: Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h35m.unity using Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0d6925093ed536ad6b00770e6287abc1') in 0.0081453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.679674 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h40m.unity
+  artifactKey: Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h40m.unity using Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '20407c57b430c9a6d106510609103cae') in 0.0084138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 7.53 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12622 unused Assets / (20.5 MB). Loaded Objects now: 13482.
+Memory consumption went from 229.1 MB to 208.6 MB.
+Total: 17.361400 ms (FindLiveObjects: 1.500300 ms CreateObjectMapping: 1.093500 ms MarkObjects: 9.973400 ms  DeleteObjects: 4.792800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 170.331245 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '85910ef9e1400c08599429d369d70487') in 0.0225231 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022273 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a04b5af2be4269bc0632b4bf936d3ee5') in 0.0005933 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Duplicate assembly 'System.Collections.Immutable.FSR.dll' with different versions detected, using 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.FSR.dll, AssemblyName=System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.dll, AssemblyName=System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.143 seconds
+Refreshing native plugins compatible for Editor in 3.35 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 2.93 ms, found 8 plugins.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x00076] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00001] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x00030] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x0001e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:204 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x0003e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00050] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <9b202f9e66df4a80986e89af18f9605b>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.233 seconds
+Domain Reload Profiling: 2376ms
+	BeginReloadAssembly (248ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (38ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (91ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (792ms)
+		LoadAssemblies (571ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (288ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (258ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1233ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1105ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (216ms)
+			ProcessInitializeOnLoadAttributes (637ms)
+			ProcessInitializeOnLoadMethodAttributes (235ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.56 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12658 unused Assets / (22.1 MB). Loaded Objects now: 13487.
+Memory consumption went from 238.3 MB to 216.2 MB.
+Total: 12.255200 ms (FindLiveObjects: 0.744300 ms CreateObjectMapping: 0.482800 ms MarkObjects: 5.960600 ms  DeleteObjects: 5.066200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 15.474904 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '312d056265f6b46c05c64ce73dd58833') in 0.0126909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.98 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12622 unused Assets / (23.8 MB). Loaded Objects now: 13487.
+Memory consumption went from 235.2 MB to 211.4 MB.
+Total: 12.428500 ms (FindLiveObjects: 0.749500 ms CreateObjectMapping: 0.583600 ms MarkObjects: 6.449100 ms  DeleteObjects: 4.645200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 999.689601 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dc82fc1cfd7a85f516361eaf3d36a69') in 0.0153428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Duplicate assembly 'System.Collections.Immutable.FSR.dll' with different versions detected, using 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.FSR.dll, AssemblyName=System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.dll, AssemblyName=System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.847 seconds
+Refreshing native plugins compatible for Editor in 3.89 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 2.80 ms, found 8 plugins.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x00076] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00001] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x00030] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x0001e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:204 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x0003e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00050] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <9b202f9e66df4a80986e89af18f9605b>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.141 seconds
+Domain Reload Profiling: 1988ms
+	BeginReloadAssembly (188ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (592ms)
+		LoadAssemblies (384ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (264ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (238ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1141ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1014ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (591ms)
+			ProcessInitializeOnLoadMethodAttributes (206ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.78 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12658 unused Assets / (24.5 MB). Loaded Objects now: 13492.
+Memory consumption went from 238.9 MB to 214.4 MB.
+Total: 10.440600 ms (FindLiveObjects: 0.812900 ms CreateObjectMapping: 0.485900 ms MarkObjects: 4.440500 ms  DeleteObjects: 4.700500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 89.179325 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e60391e233902c4e75c28026c21908dc') in 0.1243763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h55m.unity
+  artifactKey: Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h55m.unity using Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b3a0e8f0f2d04f267c8867aa9faa4255') in 0.0158594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h50m.unity
+  artifactKey: Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h50m.unity using Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9dd82bd4e7ee9cf0ac822dd3d278768a') in 0.0074673 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h00m.unity
+  artifactKey: Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h00m.unity using Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '145265e6ba8c76770ed1fcb4bc6710e7') in 0.0081001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 18h45m.unity
+  artifactKey: Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 18h45m.unity using Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3f2b2d50726b20c293d217a69dc86b5e') in 0.0079995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.510429 seconds.
+  path: Assets/Two cubes one rectangle/new_deployment_definition.ddef
+  artifactKey: Guid(e96ae70d55e453c4eb96921631ad9f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/new_deployment_definition.ddef using Guid(e96ae70d55e453c4eb96921631ad9f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c6c42613fb4b34857aafa986c7cce054') in 0.0131068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.350716 seconds.
+  path: Assets/Two cubes one rectangle/new_deployment_definition.ddef
+  artifactKey: Guid(e96ae70d55e453c4eb96921631ad9f5f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/new_deployment_definition.ddef using Guid(e96ae70d55e453c4eb96921631ad9f5f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7e5b30d7c71d4fe27f68ea448e986c87') in 0.0163789 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.883920 seconds.
+  path: Assets/Two cubes one rectangle/New Actions.inputactions
+  artifactKey: Guid(c195c6d1449fc7c4a83e9e65ea73ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/New Actions.inputactions using Guid(c195c6d1449fc7c4a83e9e65ea73ec84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae53788a92baad7acff7559edbaa4881') in 0.0023688 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 7.20 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12622 unused Assets / (25.8 MB). Loaded Objects now: 13492.
+Memory consumption went from 235.3 MB to 209.5 MB.
+Total: 21.384500 ms (FindLiveObjects: 0.798300 ms CreateObjectMapping: 0.488700 ms MarkObjects: 12.030000 ms  DeleteObjects: 8.066300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 73.862819 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '41cb10d58dd840c575545c98d770478a') in 0.0152432 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Successfully resolved entitlement details
+Duplicate assembly 'System.Collections.Immutable.FSR.dll' with different versions detected, using 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.FSR.dll, AssemblyName=System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.dll, AssemblyName=System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.870 seconds
+Refreshing native plugins compatible for Editor in 2.94 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 3.45 ms, found 8 plugins.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x00076] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00001] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x00030] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x0001e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:204 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x0003e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00050] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <9b202f9e66df4a80986e89af18f9605b>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.071 seconds
+Domain Reload Profiling: 1942ms
+	BeginReloadAssembly (220ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (48ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (582ms)
+		LoadAssemblies (380ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (256ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (231ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1071ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (960ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (556ms)
+			ProcessInitializeOnLoadMethodAttributes (195ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.06 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12658 unused Assets / (24.3 MB). Loaded Objects now: 13497.
+Memory consumption went from 239.0 MB to 214.6 MB.
+Total: 11.222500 ms (FindLiveObjects: 0.827800 ms CreateObjectMapping: 0.589500 ms MarkObjects: 4.810800 ms  DeleteObjects: 4.993400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 2.89 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12622 unused Assets / (24.2 MB). Loaded Objects now: 13497.
+Memory consumption went from 235.9 MB to 211.7 MB.
+Total: 10.699600 ms (FindLiveObjects: 0.722400 ms CreateObjectMapping: 0.552000 ms MarkObjects: 4.551300 ms  DeleteObjects: 4.872800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'System.Collections.Immutable.FSR.dll' with different versions detected, using 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.FSR.dll, AssemblyName=System.Collections.Immutable, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' and ignoring 'Assets/FastScriptReload/Plugins/Roslyn/2021+/System.Collections.Immutable.dll, AssemblyName=System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'.Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.835 seconds
+Refreshing native plugins compatible for Editor in 2.89 ms, found 8 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Refreshing native plugins compatible for Editor in 2.97 ms, found 8 plugins.
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore..ctor (System.String directory) [0x00076] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:55 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.ProjectDataStore.GetMain () [0x00001] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Configuration\ProjectDataStore.cs:36 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.WorkflowMainEditorContext..ctor (Unity.Multiplayer.Playmode.VirtualProjects.Editor.MainEditorContext mainEditorContext) [0x00030] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Contexts\WorkflowMainEditorContext.cs:15 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow.InitializeMPPMContexts () [0x0001e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:204 
+  at Unity.Multiplayer.Playmode.Workflow.Editor.VirtualProjectWorkflow+<>c.<.cctor>b__22_0 () [0x0003e] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\Workflow\Editor\Workflow\VirtualProjectWorkflow.cs:85 
+  at Unity.Multiplayer.Playmode.VirtualProjects.Editor.EditorContexts.SendReadyEvent () [0x00050] in .\Library\PackageCache\com.unity.multiplayer.playmode@d6d235962e24\VirtualProjects\Editor\Contexts\EditorContexts.cs:56 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <4449e9424e7e4d4d81a660907c68cb97>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00056] in <9b202f9e66df4a80986e89af18f9605b>:0 
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.122 seconds
+Domain Reload Profiling: 1958ms
+	BeginReloadAssembly (192ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (39ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (575ms)
+		LoadAssemblies (364ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (262ms)
+			TypeCache.Refresh (12ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (236ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1122ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (999ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (200ms)
+			ProcessInitializeOnLoadAttributes (575ms)
+			ProcessInitializeOnLoadMethodAttributes (208ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Hidden/Universal Render Pipeline/Terrain/Lit (Base Pass)' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Terrain/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Refreshing native plugins compatible for Editor in 3.03 ms, found 8 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 79 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12658 unused Assets / (24.6 MB). Loaded Objects now: 13502.
+Memory consumption went from 239.0 MB to 214.4 MB.
+Total: 10.779300 ms (FindLiveObjects: 0.743300 ms CreateObjectMapping: 0.511800 ms MarkObjects: 4.816100 ms  DeleteObjects: 4.707300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 658.973446 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '098996402e8209b558dbad79ee1b3622') in 0.1629927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h10m.unity
+  artifactKey: Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h10m.unity using Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '707d930daf1c4db1073ff54dd15c21b7') in 0.0090113 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.025906 seconds.
+  path: Assets/Two cubes one rectangle/Jump.anim
+  artifactKey: Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/Jump.anim using Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '544a9550d7094aa9e3907e8f3559c81e') in 0.0124657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.954297 seconds.
+  path: Assets/Two cubes one rectangle/Jump.anim
+  artifactKey: Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/Jump.anim using Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e3006e4e35ab1ff21e28a38bb69c737a') in 0.0129497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.598250 seconds.
+  path: Assets/Two cubes one rectangle/Jump2.anim
+  artifactKey: Guid(5e783f02b5429e543a60a3939d145787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/Jump2.anim using Guid(5e783f02b5429e543a60a3939d145787) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19b2ee4e8ed8c29f7599a4b2f303e3d0') in 0.0009412 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.968734 seconds.
+  path: Assets/Two cubes one rectangle/Jump2.anim
+  artifactKey: Guid(5e783f02b5429e543a60a3939d145787) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/Jump2.anim using Guid(5e783f02b5429e543a60a3939d145787) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5ef55b01a33827e8efd86c29e21212a9') in 0.0049798 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.039041 seconds.
+  path: Assets/Two cubes one rectangle/Jump.anim
+  artifactKey: Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/Jump.anim using Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a19688dff0ed8c69946603133e5bf7d1') in 0.0050015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.126123 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h15m.unity
+  artifactKey: Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h15m.unity using Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '88f54a26a96d2a39f0315dbeb05e1da5') in 0.0070387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.380044 seconds.
+  path: Assets/Two cubes one rectangle/ComboManager.cs
+  artifactKey: Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/ComboManager.cs using Guid(90366ed9ad29f424c9b70a8f373eb5a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '73818be6bdf2e5df7dcec37a2e28ba28') in 0.0004709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 159.931689 seconds.
+  path: Assets/Two cubes one rectangle/New Timeline.playable
+  artifactKey: Guid(3c56f2c764c6d5440ac1e541c700dc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/New Timeline.playable using Guid(3c56f2c764c6d5440ac1e541c700dc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d1c5094daff922fe354091971711b70') in 0.0022408 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.929298 seconds.
+  path: Assets/Two cubes one rectangle/New Timeline.playable
+  artifactKey: Guid(3c56f2c764c6d5440ac1e541c700dc8d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/New Timeline.playable using Guid(3c56f2c764c6d5440ac1e541c700dc8d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '92951fa7b5cbaba33b245a63cb96251a') in 0.0146397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.285120 seconds.
+  path: Assets/Two cubes one rectangle/ActivateDamageSignal.signal
+  artifactKey: Guid(df7eb79be24588645906d132cf56c23f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/ActivateDamageSignal.signal using Guid(df7eb79be24588645906d132cf56c23f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ed9185a1155466c3f33db8464ac41bd7') in 0.0063713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.913180 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h20m.unity
+  artifactKey: Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h20m.unity using Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6ea6a07ab196673f1ffb616ed7643a10') in 0.0172323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.633829 seconds.
+  path: Assets/Two cubes one rectangle/Jump.anim
+  artifactKey: Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/Jump.anim using Guid(fb6dfcf444495624a9d3c6921d5976b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4e37bdb6e25b3ebb83a51a31df6f28f') in 0.0012166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.305880 seconds.
+  path: Assets/Two cubes one rectangle/GameObject.controller
+  artifactKey: Guid(897df225b37914d4293f5baa05b4591b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/GameObject.controller using Guid(897df225b37914d4293f5baa05b4591b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '165dc921df97f3d72a0513ad4e654b7f') in 0.0018966 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.584156 seconds.
+  path: Assets/Two cubes one rectangle/New Timeline.playable
+  artifactKey: Guid(3c56f2c764c6d5440ac1e541c700dc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Two cubes one rectangle/New Timeline.playable using Guid(3c56f2c764c6d5440ac1e541c700dc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c89f5b259b1d73dd0efdfbeddf84fcc8') in 0.0040511 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 243.590433 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h25m.unity
+  artifactKey: Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h25m.unity using Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '159761015a045981ec93e8d16a2af2e3') in 0.0102165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.333623 seconds.
+  path: Assets/Two cubes one rectangle/Main.unity
+  artifactKey: Guid(8ae23f9288956a548beba09c56c7ecf1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Two cubes one rectangle/Main.unity using Guid(8ae23f9288956a548beba09c56c7ecf1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e5c0372a08912d180ed713eb25b593c1') in 0.0071013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 257.623441 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h30m.unity
+  artifactKey: Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h30m.unity using Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '02cd6e5ddb59ee62020bea48f6c66cb0') in 0.0125097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.564248 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h35m.unity
+  artifactKey: Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h35m.unity using Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3477ae94717d924eb0604dece7b5c8fd') in 0.0106547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.900018 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h40m.unity
+  artifactKey: Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h40m.unity using Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3faa201cf8a6070b4ddcdd595dd2f519') in 0.0125429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.497755 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h45m.unity
+  artifactKey: Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h45m.unity using Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7a738cfe78ea263956b542ac233f3061') in 0.0113763 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.130303 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h50m.unity
+  artifactKey: Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h50m.unity using Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c63ad7f9348505c9b835882bb8be3e79') in 0.0125896 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.811160 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 19h55m.unity
+  artifactKey: Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 19h55m.unity using Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f9fa3b1e38ee463df5c9ef9eeee94b6d') in 0.013427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.936732 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h00m.unity
+  artifactKey: Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h00m.unity using Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f8238a0ec8f1ab26d27a4a0e0d453a36') in 0.0099798 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.415058 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h05m.unity
+  artifactKey: Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h05m.unity using Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a0dddbeb133d47caa93e316443e19176') in 0.0168619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.239652 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h10m.unity
+  artifactKey: Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h10m.unity using Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6fe5363bce8ebd3ab4d61b12ae3da9dc') in 0.0115105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.731321 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h15m.unity
+  artifactKey: Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h15m.unity using Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e67141d215a59cbdf4b627d6a3f270ea') in 0.009375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.995946 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h20m.unity
+  artifactKey: Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h20m.unity using Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1c0ab6e62a2db73735bbc6b1a43c6134') in 0.009696 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.307173 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h25m.unity
+  artifactKey: Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h25m.unity using Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '096766dc953fedc38890207d301bd541') in 0.0148767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.968621 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h30m.unity
+  artifactKey: Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h30m.unity using Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '42d95bc0224f94177de691061603b0f2') in 0.0144604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.491038 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h35m.unity
+  artifactKey: Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h35m.unity using Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b6458bc157576818ef566ca98c300e4f') in 0.0134946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.597119 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h40m.unity
+  artifactKey: Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h40m.unity using Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e9fdcbdd8409e4ee540d9c261e8906c0') in 0.0122841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.395243 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h45m.unity
+  artifactKey: Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h45m.unity using Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '36f4caff97d09aa297e9ba705d334a01') in 0.0102907 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.539745 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h50m.unity
+  artifactKey: Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h50m.unity using Guid(83b41a902f56c1f45aae36b4c63d394c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '811a8c99f4f5f8e2df064ba3f8858f7d') in 0.0133292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.155128 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 20h55m.unity
+  artifactKey: Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 20h55m.unity using Guid(4493b2be9892d69499ba1464909b2833) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '76bda2005d756db872cc9ebe0fd9da99') in 0.0095922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.138442 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h00m.unity
+  artifactKey: Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h00m.unity using Guid(a5df8910834291548ab2c398f1974007) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '238236c516800d668969471445a07faa') in 0.0362119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 301.026725 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h05m.unity
+  artifactKey: Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h05m.unity using Guid(0a4d1a9681b1e4040953f33d49705112) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c3a83ed96b71582f46c1a498af3689f2') in 0.0117859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.252160 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h10m.unity
+  artifactKey: Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h10m.unity using Guid(65ff61a7cbc8a03418d8d8d6c1b7dbf8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2035c5887733f978425d1ea95e1e9b43') in 0.0138064 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.392315 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h15m.unity
+  artifactKey: Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h15m.unity using Guid(e4ea30c0f6f4e7946a66e235e5926f2c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2dabd364f90e26922b01746a181c1ec7') in 0.0230177 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 297.248811 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h20m.unity
+  artifactKey: Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h20m.unity using Guid(c06d06b13f38afc4db0929d7f12f4933) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ddb53bdd785df0ed8748efa0ab594ee7') in 0.0107289 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.680274 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h25m.unity
+  artifactKey: Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h25m.unity using Guid(912714c748bfc7b448ea250360c34fd7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '657181be7d61f122def84912a7bf8622') in 0.0108834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.502799 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h30m.unity
+  artifactKey: Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h30m.unity using Guid(2fff728feebd790409cb1add8a66e9f3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3fa40f3b2348ff525f1c1888ea2f4e02') in 0.0107226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 300.143375 seconds.
+  path: Assets/AutoSave/AutoSave [Main.unity] 21h35m.unity
+  artifactKey: Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/AutoSave/AutoSave [Main.unity] 21h35m.unity using Guid(2d77aecd2e2693d4bbf7cedc045468ed) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1b925e55e2706912868377ab405def54') in 0.0108539 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: da0ace0b8865e4722a8c52e095db48eb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Scripts/Core/Effects/AntEffectMediator.cs
+  uploadId: 430610

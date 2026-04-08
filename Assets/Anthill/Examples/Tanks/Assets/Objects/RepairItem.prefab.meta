@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c109ad9c710044a539944d5dff3e2d1d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Objects/RepairItem.prefab
+  uploadId: 430610

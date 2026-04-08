@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e2af12927883d4cbb995481b32e3a012
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Animations/DustParticle.asset
+  uploadId: 430610

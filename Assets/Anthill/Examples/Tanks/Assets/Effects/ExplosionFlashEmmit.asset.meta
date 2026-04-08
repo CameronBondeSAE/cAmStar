@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6ea0a7099c0e3412db2d2c3f7ff5656e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Effects/ExplosionFlashEmmit.asset
+  uploadId: 430610

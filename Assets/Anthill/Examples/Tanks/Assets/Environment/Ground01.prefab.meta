@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c669972e7e8fa4c39b9e34542ecc0e0d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Environment/Ground01.prefab
+  uploadId: 430610

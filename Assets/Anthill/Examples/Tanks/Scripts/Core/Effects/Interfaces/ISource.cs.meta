@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c7588003c675e4b4abbfcba106e66e60
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Scripts/Core/Effects/Interfaces/ISource.cs
+  uploadId: 430610

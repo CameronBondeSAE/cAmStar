@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e1c3fbf9a4d694ab29908ed3aacc9f40
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/TanksScene.unity
+  uploadId: 430610

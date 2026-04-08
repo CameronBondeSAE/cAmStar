@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 125f1df0d6d0143c399071535c73bd11
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/AI/SearchGunState.prefab
+  uploadId: 430610

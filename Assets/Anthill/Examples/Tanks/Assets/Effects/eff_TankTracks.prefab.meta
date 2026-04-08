@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bd475ffc9fc6a4c1d8c44dff0646bd22
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Effects/eff_TankTracks.prefab
+  uploadId: 430610

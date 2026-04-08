@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 57f42afc5738f4a91946f7880cd3d5bc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/DefaultUse/Scripts/SearchBaseState.cs
+  uploadId: 430610

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 351b2b963bde54fe5a059af5dfc26e25
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/AI/ApproachState.prefab
+  uploadId: 430610

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2f23fc4c556b04b3c8ed41ce33c1318f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/AI/Editor/FixPositionHelper.cs
+  uploadId: 430610

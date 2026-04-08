@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4833d954350d14d2dbb7174155d357ce
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Effects/prt_ExplosionTrace.prefab
+  uploadId: 430610

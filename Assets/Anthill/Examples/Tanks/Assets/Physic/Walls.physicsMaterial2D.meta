@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 08453dd361d8344998e5743c1a6524ea
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 6200000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Physic/Walls.physicsMaterial2D
+  uploadId: 430610

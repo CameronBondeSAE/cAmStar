@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 806378908fe7e4d9f8ea7402179b33c7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/DefaultUse/Assets/SearchBase.prefab
+  uploadId: 430610

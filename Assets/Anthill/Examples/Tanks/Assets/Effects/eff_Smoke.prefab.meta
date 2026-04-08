@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 48724b57bcdd74b9caeb7539ad1ed7e1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Effects/eff_Smoke.prefab
+  uploadId: 430610

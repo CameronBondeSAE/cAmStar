@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8fbf0e2fb5ba64bdba1b664c83c38272
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/AI/Editor/AntAIActionStateNode.cs
+  uploadId: 430610

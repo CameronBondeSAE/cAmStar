@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e691741e293f64a87ad086b9463cdab8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/AI/AimState.prefab
+  uploadId: 430610

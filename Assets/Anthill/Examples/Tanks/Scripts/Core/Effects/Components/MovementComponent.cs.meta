@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d99d53ed3cbac4df9a79cd36782b461b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Scripts/Core/Effects/Components/MovementComponent.cs
+  uploadId: 430610

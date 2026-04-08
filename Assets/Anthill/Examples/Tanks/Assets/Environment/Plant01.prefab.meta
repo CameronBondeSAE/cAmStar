@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 54ecf65b9b0e343198877f6fca2da4d8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Environment/Plant01.prefab
+  uploadId: 430610

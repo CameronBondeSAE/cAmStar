@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0bea9c41c200e4a81afecfb6acd686fb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Effects/ExplosionTraceEmmit.asset
+  uploadId: 430610

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8e7ea97beb654408bb1d4d9bbba294a4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Objects/HealthBar.prefab
+  uploadId: 430610

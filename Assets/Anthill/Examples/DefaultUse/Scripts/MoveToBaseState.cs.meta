@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 93465a8d3c4cf43f394f22b180e4e6e7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/DefaultUse/Scripts/MoveToBaseState.cs
+  uploadId: 430610

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9b8252edf04cf42788c2ce997059f45d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Environment/Rocks02.prefab
+  uploadId: 430610

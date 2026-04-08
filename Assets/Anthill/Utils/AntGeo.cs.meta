@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 61b19c1c9f98e4b61926652420290e28
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Utils/AntGeo.cs
+  uploadId: 430610

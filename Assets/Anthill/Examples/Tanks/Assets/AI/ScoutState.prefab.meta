@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bb948eb061fec4bc6aebdff1cae1eef9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/AI/ScoutState.prefab
+  uploadId: 430610

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0f40d0aa629f84d36a6c64e95cd00d4e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/AI/GunAttackState.prefab
+  uploadId: 430610

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9324c86f6af79415da9f441d31574cae
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Scripts/Components/Controls/Bullet.cs
+  uploadId: 430610

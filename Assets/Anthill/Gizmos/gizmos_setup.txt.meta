@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 298470a31982b40c6a67b14ecfc82a2d
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Gizmos/gizmos_setup.txt
+  uploadId: 430610

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c13dbca5717d24a459f18cbf268cac03
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Objects/AmmoItem.prefab
+  uploadId: 430610

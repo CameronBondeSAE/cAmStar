@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 82cd95e303e004a118fe25f8d157b82a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Objects/GunItem.prefab
+  uploadId: 430610

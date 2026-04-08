@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1824ee19131f94177a404f1c917d0da4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Scripts/Components/States/PickupAmmoState.cs
+  uploadId: 430610

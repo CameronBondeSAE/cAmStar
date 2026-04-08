@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 125fbc27c9a014752b0d915213df0041
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Scripts/Core/Effects/Components/BurstComponent.cs
+  uploadId: 430610

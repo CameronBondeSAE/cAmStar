@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b5f41f0c9dbd047ea95f54e29775e0d1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 161981
+  packageName: Ant AI
+  packageVersion: 1.3.0
+  assetPath: Assets/Anthill/Examples/Tanks/Assets/Environment/BaseBottom.prefab
+  uploadId: 430610
