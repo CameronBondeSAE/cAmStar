@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7156150742704528148}
   - component: {fileID: 1357518167844300926}
   - component: {fileID: 6849525344506666878}
-  - component: {fileID: 3639248264529599996}
+  - component: {fileID: 6233165990405630575}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -145,7 +145,7 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &3639248264529599996
+--- !u!114 &6233165990405630575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,43 +154,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 324497403600135603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: db54a8766dcfccf4d9cc1e6b0ddb7484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  NetworkTransformExpanded: 0
-  AutoOwnerAuthorityTickOffset: 1
-  PositionInterpolationType: 0
-  RotationInterpolationType: 0
-  ScaleInterpolationType: 0
-  PositionLerpSmoothing: 1
-  PositionMaxInterpolationTime: 0.1
-  RotationLerpSmoothing: 1
-  RotationMaxInterpolationTime: 0.1
-  ScaleLerpSmoothing: 1
-  ScaleMaxInterpolationTime: 0.1
-  AuthorityMode: 0
-  TickSyncChildren: 0
-  UseUnreliableDeltas: 0
-  SyncPositionX: 1
-  SyncPositionY: 1
-  SyncPositionZ: 0
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 1
-  SyncScaleX: 1
-  SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.01
-  RotAngleThreshold: 1
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  SwitchTransformSpaceWhenParented: 0
-  Interpolate: 1
-  SlerpPosition: 0
+  myTransform: {fileID: 8733894130793340343}
+  myRigidbody2D: {fileID: 1227682682622199690}
+  updateDelay: 1
 --- !u!1 &3766955604506937476
 GameObject:
   m_ObjectHideFlags: 0

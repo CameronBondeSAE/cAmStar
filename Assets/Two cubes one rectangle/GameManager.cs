@@ -9,7 +9,7 @@ public class GameManager : NetworkBehaviour
 	public NetworkObject   playerPrefab;
 	public List<Transform> spawnPoints = new List<Transform>();
 	public int             spawnIndex;
-
+	public TrackingCamera          trackingCamera;
 
 	public override void OnNetworkSpawn()
 	{
@@ -48,6 +48,19 @@ public class GameManager : NetworkBehaviour
 		{
 			spawnIndex = 0;
 		}
+
+		if (newPlayer != null)
+		{
+			AssignCamera_Rpc(newPlayer);
+		}
+	}
+
+	[Rpc(SendTo.ClientsAndHost, Delivery = RpcDelivery.Reliable)]
+	private void AssignCamera_Rpc(NetworkObjectReference newPlayer)
+	{
+		newPlayer.TryGet(out NetworkObject networkObject);
+		if(networkObject.IsLocalPlayer)
+			trackingCamera.targetTransform = networkObject.transform;
 	}
 
 
