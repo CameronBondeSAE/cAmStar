@@ -205,3 +205,17 @@ The following packages were updated:
   com.unity.recorder from version 5.1.4 to 5.1.5
   com.unity.searcher from version 4.9.2 to 4.9.3
   com.unity.timeline from version 1.8.9 to 1.8.10
+
+=== Tue May 26 14:59:24 2026
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ai.navigation from version 2.0.11 to 2.0.12
+  com.unity.cinemachine from version 2.10.4 to 2.10.7
+  com.unity.collab-proxy from version 2.11.3 to 2.12.4
+  com.unity.collections from version 2.6.2 to 2.6.5
+  com.unity.nuget.mono-cecil from version 1.11.5 to 1.11.6
+  com.unity.test-framework.performance from version 3.2.0 to 3.3.0
+  com.unity.visualscripting from version 1.9.7 to 1.9.11

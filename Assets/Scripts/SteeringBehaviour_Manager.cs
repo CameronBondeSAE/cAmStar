@@ -39,4 +39,11 @@ public class SteeringBehaviour_Manager : MonoBehaviour
 			item.enabled = !item.enabled;
 		}
 	}
+	public void ToggleAvoid()
+	{
+		foreach (Avoid item in FindObjectsByType<Avoid>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+		{
+			item.enabled = !item.enabled;
+		}
+	}
 }

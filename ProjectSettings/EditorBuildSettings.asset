@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Two cubes one rectangle/Main.unity
+    path: Assets/Projects/Two cubes one rectangle/Scenes/Main.unity
     guid: 8ae23f9288956a548beba09c56c7ecf1
   - enabled: 1
-    path: Assets/Scenes/SteeringBehaviours.unity
+    path: Assets/Projects/AI tests/SteeringBehaviours.unity
     guid: 8091bf50cc2f42542a633d29fbd45800
   - enabled: 1
-    path: Assets/Scenes/Navmesh test.unity
+    path: Assets/Projects/AI tests/Navmesh test.unity
     guid: 6c24208cf30a2b64fbdea7635295e420
   - enabled: 1
     path: Assets/Scenes/Playground.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
+  - enabled: 1
+    path: Assets/Projects/Networking/Light.unity
+    guid: 7514b37f9d2faff43b5158f658a9be60
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f,
       type: 2}
